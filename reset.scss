@@ -1,0 +1,131 @@
+$clobalBlack: black;
+$clobalCrimson: rgba(232, 32, 73, 0.9);
+$clobalWhite: white;
+$bg: #191919;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@mixin globalBtn {
+  display: inline-block;
+  text-decoration: none;
+  background: $clobalCrimson;
+  color: $clobalWhite;
+  border: solid 1px $clobalCrimson;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    color: $clobalCrimson;
+    background: $clobalWhite;
+
+  }
+}
+
+@mixin aboutBtn {
+  background: $clobalCrimson;
+  color: $clobalWhite;
+  border: solid 1px $clobalCrimson;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $clobalCrimson;
+    background: $clobalWhite;
+  }
+}
+
+@mixin skilsLine {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $clobalCrimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: $clobalCrimson;
+
+  }
+}
+
+@mixin skillsBtn {
+  background: $clobalCrimson;
+  color: $clobalWhite;
+  border: solid 1px $clobalCrimson;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    color: $clobalCrimson;
+    background: $clobalBlack;
+  }
+}
+
+@mixin msgBtn {
+  background: $clobalCrimson;
+  color: $clobalWhite;
+  border: solid 1px $clobalCrimson;
+  text-transform: uppercase;
+  width: 325px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-top: 15px;
+  &:hover {
+    color: $clobalCrimson;
+    background: $clobalWhite;
+  }
+}
+
+//footer
+
+#footer {
+  background: $bg;
+  color: $clobalWhite;
+  .footer__content{
+    text-align: center;
+    h5{
+      margin-bottom: 10px;
+    }
+  }
+}
