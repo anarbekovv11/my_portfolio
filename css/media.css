@@ -1,0 +1,14 @@
+@media ( max-height: 1140px ){
+    .container{
+        max-width: 375px;
+    }
+}
+@media (max-width: 375px) {
+
+    }
+    .header__content__right{
+        display: inline-block;
+        align-items: center;
+        cursor: pointer;
+    }
+}
